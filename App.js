@@ -9,7 +9,20 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Its working this isn't a warning gz u got it running gj</Text>
       <StatusBar style="auto"/>
+      <View style={styles.viewButton}>
+        <Button
+        onPress={() => alert('Button pressed')}
+        title="Learn More"
+        color="red"
+        />
+      </View>
     </View>
+    // <Button
+    // onPress={() => alert('Button pressed')}
+    //  title="Learn More"
+    //  color="red"
+    //  />
+
   );
 }
 
@@ -21,4 +34,13 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: "red",
   },
+  view1: {
+    flex: 2,
+    backgroundColor: "yellow",
+  },
+  view2: {
+    flex: 3,
+    backgroundColor: "green",
+  },
+
 });
